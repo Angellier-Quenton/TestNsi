@@ -6,5 +6,6 @@ mkdir NSITravail
 
 # Import the workspace into JupyterLab
 jupyter lab workspaces import binder/workspace.json
+python -m bash_kernel.install
 
 
