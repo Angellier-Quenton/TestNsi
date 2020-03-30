@@ -1,6 +1,3 @@
 #!/bin/bash
 
-adduser --disabled-password max eleve
-adduser --disabled-password elsa eleve
 
-exec "$@"
