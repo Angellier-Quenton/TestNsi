@@ -12,7 +12,7 @@
                     "widgets":["notebook:Tp_shell.ipynb","terminal:1"]
                 },
                 "mode":"multiple-document",
-                "current":"terminal:1"
+                "current":"notebook:Tp_shell.ipynb"
             },
             "left":{"collapsed":true,"widgets":["filebrowser","running-sessions","command-palette","tab-manager"]},
             "right":{"collapsed":true,"widgets":[]}
