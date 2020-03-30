@@ -17,8 +17,8 @@
             "left":{"collapsed":true,"widgets":["filebrowser","running-sessions","command-palette","tab-manager"]},
             "right":{"collapsed":true,"widgets":[]}
         },
-        "terminal:1":{"data":{"name":"1"}},
-        "notebook:Tp_shell.ipynb":{"data":{"path":"Tp_shell.ipynb","factory":"Notebook"}}
+        "notebook:Tp_shell.ipynb":{"data":{"path":"Tp_shell.ipynb","factory":"Notebook"}},
+        "terminal:1":{"data":{"name":"1"}}
     },
     "metadata":{"id":"/lab"}
 }
