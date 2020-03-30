@@ -1,1 +1,23 @@
-{"data":{"layout-restorer:data":{"main":{"dock":{"type":"tab-area","currentIndex":1,"widgets":["notebook:Tp_shell.ipynb","terminal:2"]},"mode":"multiple-document","current":"terminal:2"},"left":{"collapsed":true,"widgets":["filebrowser","running-sessions","command-palette","tab-manager"]},"right":{"collapsed":true,"widgets":[]}},"terminal:2":{"data":{"name":"2"}},"notebook:Tp_shell.ipynb":{"data":{"path":"Tp_shell.ipynb","factory":"Notebook"}},"metadata":{"id":"/lab"}}
+{
+    "data":
+    {
+        "layout-restorer:data":
+        {
+            "main":
+            {
+                "dock":
+                {
+                    "type":"tab-area","currentIndex":1,
+                    "widgets":["notebook:Tp_shell.ipynb","terminal:2"]
+                },
+                "mode":"multiple-document","current":"terminal:2"
+            },
+            "left":{"collapsed":true,"widgets":["filebrowser","running-sessions","command-palette","tab-manager"]},
+            "right":{"collapsed":true,"widgets":[]}
+        },
+        "terminal:2":{"data":{"name":"2"}},
+        "notebook:Tp_shell.ipynb":{"data":{"path":"Tp_shell.ipynb","factory":"Notebook"}}
+    },
+    "metadata":{"id":"/lab"}
+}
+
