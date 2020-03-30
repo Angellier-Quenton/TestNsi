@@ -20,6 +20,5 @@ touch TP2/dept1/anne/divers/fich5
 touch TP2/dept2/lucie/fich1
 touch TP2/dept2/lucie/fich2
 
-cd ~/binder
-rm postBuild
+rm ~/binder/postBuild
 
