@@ -2,12 +2,9 @@
 
 set -ex
 mkdir NSITravail
-adduser --disabled-password max eleve
-adduser --disabled-password elsa eleve
 
 # Import the workspace into JupyterLab
 jupyter lab workspaces import binder/workspace.json
 python -m bash_kernel.install
 
-exec "$@"
 
