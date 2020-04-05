@@ -7,18 +7,3 @@ mkdir NSITravail
 jupyter lab workspaces import binder/workspace.json
 python -m bash_kernel.install
 
-cd NSITravail
-mkdir Exo
-cd Exo
-mkdir -p TP2/dept1/isabelle/journal TP2/dept1/isabelle/travaux
-mkdir -p TP2/dept1/anne/journal TP2/dept1/anne/divers
-mkdir -p TP2/dept2/lucie TP2/dept2/vincent
-touch TP2/dept1/isabelle/journal/fich1 TP2/dept1/isabelle/journal/fich2
-touch TP2/dept1/isabelle/travaux/fich1 TP2/dept1/isabelle/travaux/fich2
-touch TP2/dept1/anne/journal/fich1 TP2/dept1/anne/journal/fich2
-touch TP2/dept1/anne/divers/fich5
-touch TP2/dept2/lucie/fich1
-touch TP2/dept2/lucie/fich2
-
-rm ~/binder/postBuild
-
