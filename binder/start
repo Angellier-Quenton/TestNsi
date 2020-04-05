@@ -6,7 +6,7 @@ RUN apt-get update && \
     apt-get install -y \
         man \
         manpages-posix
-
+RUN adduser professeur
 
 USER max:eleve
 USER elsa:eleve
