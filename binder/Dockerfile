@@ -3,6 +3,9 @@ FROM ubuntu
 USER root
 RUN sed -i 's:^path-exclude=/usr/share/man:#path-exclude=/usr/share/man:'         /etc/dpkg/dpkg.cfg.d/excludes
 RUN apt-get update &&     apt-get install -y         man         manpages-posix
+RUN apt-get install -y conda-forge python=3.7 bokeh=1.1.0 dask=2.0.0 dask-image=0.2.0 dask-ml=1.0.0 jupyterlab>=1.0 nodejs=8.9 notebook>=5.7.5 tornado=5 numba numpy pip pandas pyarrow==0.12.0 python-graphviz seaborn scikit-learn=0.20 matplotlib nbserverproxy nomkl h5py xarray bottleneck requests py-xgboost
+
+RUN pip install --no-cache-dir notebook==5.* dask_xgboost mimesis dask-labextension>=1.0 bash_kernel
 
 ARG NB_USER=professeur
 ARG NB_UID=1000
@@ -24,17 +27,5 @@ USER root
 RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_USER}
 
-   19  su elsa
-   20  apt-get install jupyter-lab
-   21  apt-get install jupyter
-   22  pip 
-   23  sudo apt-get remove jupyter
-   24  apt-get remove jupyter
-   25  apt-get install pip
-   26  python3
-   27  python3 
-   28  apt-get install python-setuptools
-   29  apt-get install python3-venv python3-pip
-   30  pip install --no-cache-dir notebook==5.*
-   31  python3 -m pip
-   32  python3 -m pip install --no-cache-dir notebook==5.*
+ENTRYPOINT []
+
