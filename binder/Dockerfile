@@ -18,33 +18,6 @@ RUN adduser --disabled-password \
     --uid ${NB_UID} \
     ${NB_USER}
 
-ARG NB_USER=max
-ARG NB_UID=1002
-ENV USER ${NB_USER}
-ENV NB_UID ${NB_UID}
-ENV HOME /home/${NB_USER}
-
-RUN adduser --disabled-password \
-    --uid ${NB_UID} \
-    ${NB_USER} \
-    #--ingroup eleve
-
-ARG NB_USER=elsa
-ARG NB_UID=1003
-ENV USER ${NB_USER}
-ENV NB_UID ${NB_UID}
-ENV HOME /home/${NB_USER}
-
-RUN adduser --disabled-password \
-    --uid ${NB_UID} \
-    ${NB_USER} \
-    #--ingroup eleve
-
-ARG NB_USER=professeur
-ARG NB_UID=1001
-ENV USER ${NB_USER}
-ENV NB_UID ${NB_UID}
-ENV HOME /home/${NB_USER}
   
 # Make sure the contents of our repo are in ${HOME}
 COPY . ${HOME}
