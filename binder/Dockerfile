@@ -1,5 +1,7 @@
-#remplacement de ubuntu par jupyter
-FROM jupyter 
+#remplacement de ubuntu par python:3.7-slim
+FROM python:3.7-slim
+RUN pip install --no-cache notebook
+ENV HOME=/tmp
 
 USER root
 RUN sed -i 's:^path-exclude=/usr/share/man:#path-exclude=/usr/share/man:'         /etc/dpkg/dpkg.cfg.d/excludes
