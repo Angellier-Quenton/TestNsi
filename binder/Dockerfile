@@ -9,7 +9,7 @@ RUN apt-get update &&     apt-get install -y         man         manpages-posix
 #RUN pip install --no-cache-dir notebook==5.* dask_xgboost mimesis dask-labextension>=1.0 bash_kernel
 
 ARG NB_USER=professeur
-ARG NB_UID=1000
+ARG NB_UID=1001
 ENV USER ${NB_USER}
 ENV NB_UID ${NB_UID}
 ENV HOME /home/${NB_USER}
@@ -19,8 +19,39 @@ RUN adduser --disabled-password \
     --uid ${NB_UID} \
     ${NB_USER}
 
-RUN adduser max --disabled-password --ingroup eleve
-RUN adduser elsa --disabled-password --ingroup eleve
+ARG NB_USER=max
+ARG NB_UID=1002
+ENV USER ${NB_USER}
+ENV NB_UID ${NB_UID}
+ENV HOME /home/${NB_USER}
+
+RUN adduser --disabled-password \
+    --uid ${NB_UID} \
+    ${NB_USER} \
+    --ingroup eleve
+
+ARG NB_USER=elsa
+ARG NB_UID=1003
+ENV USER ${NB_USER}
+ENV NB_UID ${NB_UID}
+ENV HOME /home/${NB_USER}
+
+RUN adduser --disabled-password \
+    --uid ${NB_UID} \
+    ${NB_USER} \
+    --ingroup eleve
+
+ARG NB_USER=professeur
+ARG NB_UID=1001
+ENV USER ${NB_USER}
+ENV NB_UID ${NB_UID}
+ENV HOME /home/${NB_USER}
+
+RUN adduser --disabled-password \
+    --gecos "Default user" \
+    --uid ${NB_UID} \
+    ${NB_USER}
+
   
 # Make sure the contents of our repo are in ${HOME}
 COPY . ${HOME}
