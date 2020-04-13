@@ -27,7 +27,7 @@ ENV HOME /home/${NB_USER}
 RUN adduser --disabled-password \
     --uid ${NB_UID} \
     ${NB_USER} \
-    --ingroup eleve
+    #--ingroup eleve
 
 ARG NB_USER=elsa
 ARG NB_UID=1003
@@ -38,7 +38,7 @@ ENV HOME /home/${NB_USER}
 RUN adduser --disabled-password \
     --uid ${NB_UID} \
     ${NB_USER} \
-    --ingroup eleve
+    #--ingroup eleve
 
 ARG NB_USER=professeur
 ARG NB_UID=1001
