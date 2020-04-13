@@ -1,4 +1,5 @@
-FROM jupyter #ubuntu
+#remplacement de ubuntu par jupyter
+FROM jupyter 
 
 USER root
 RUN sed -i 's:^path-exclude=/usr/share/man:#path-exclude=/usr/share/man:'         /etc/dpkg/dpkg.cfg.d/excludes
