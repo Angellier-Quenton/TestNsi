@@ -4,7 +4,7 @@ RUN pip install --no-cache notebook
 ENV HOME=/tmp
 
 USER root
-RUN sed -i 's:^path-exclude=/usr/share/man:#path-exclude=/usr/share/man:'         /etc/dpkg/dpkg.cfg.d/excludes
+#RUN sed -i 's:^path-exclude=/usr/share/man:#path-exclude=/usr/share/man:'         /etc/dpkg/dpkg.cfg.d/excludes
 
 RUN apt-get update &&     apt-get install -y         man         manpages-posix
 RUN apt-get install -y conda-forge
