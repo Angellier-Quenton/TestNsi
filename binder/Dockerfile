@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM jupyter #ubuntu
 
 USER root
 RUN sed -i 's:^path-exclude=/usr/share/man:#path-exclude=/usr/share/man:'         /etc/dpkg/dpkg.cfg.d/excludes
